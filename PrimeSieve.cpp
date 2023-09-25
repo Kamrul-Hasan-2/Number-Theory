@@ -1,9 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std; 
 
-//#define n 100000
+const int n = 1e7+10;
 
-void PrimeSieve(int n){
+
+void PrimeSieve(){
     int prime[n] = {0};
 
     for(int i = 2; i<=n; i++){
@@ -25,5 +26,5 @@ void PrimeSieve(int n){
 int main(){
     int k;
     cin >> k;
-    PrimeSieve(k);
+    PrimeSieve();
 }
