@@ -4,8 +4,8 @@ using namespace std;
 const int n = 1e7+10;
 
 
-void PrimeSieve(){
-    int prime[n] = {0};
+void PrimeSieve(int k){
+    int prime[k] = {0};
 
     for(int i = 2; i<=n; i++){
         if(prime[i]==0){
@@ -15,7 +15,7 @@ void PrimeSieve(){
         }
     }
 
-    for(int i=2; i<=n; i++){
+    for(int i=2; i<=k; i++){
         if(prime[i]==0){
             cout << i << " ";
         }
@@ -26,5 +26,5 @@ void PrimeSieve(){
 int main(){
     int k;
     cin >> k;
-    PrimeSieve();
+    PrimeSieve(k);
 }
